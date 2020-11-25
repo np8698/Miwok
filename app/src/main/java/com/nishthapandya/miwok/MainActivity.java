@@ -52,11 +52,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(phrasesIntent);
             }
         });
-
-    }
-
-    public void openNumbersList(View view){
-        Intent i = new Intent(this, NumbersActivity.class);
-        startActivity(i);
     }
 }
