@@ -4,20 +4,19 @@ import android.widget.ImageView;
 
 public class Word {
 
-    private String mDefaultTranslation;
-    private String mMiwokTranslation;
+    private int mDefaultTranslation;
+    private int mMiwokTranslation;
     private int mImageResourceID = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
     private int mAudioResourceId;
 
-    public Word(String defaultTranslation , String miwokTranslation, int audioResourceId)
-    {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+    public Word(int defaultTranslationId, int miwokTranslationId, int audioResourceId) {
+        mDefaultTranslation = defaultTranslationId;
+        mMiwokTranslation = miwokTranslationId;
         mAudioResourceId = audioResourceId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageID, int audioResourceId){
+    public Word(int defaultTranslation, int miwokTranslation, int imageID, int audioResourceId){
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceID = imageID;
@@ -25,12 +24,12 @@ public class Word {
     }
 
     //returns the default word translation
-    public String getDefaultTranslation(){
+    public int getDefaultTranslation(){
         return mDefaultTranslation;
     }
 
     //returns the miwok translation
-    public String getMiwokTranslation(){
+    public int getMiwokTranslation(){
         return mMiwokTranslation;
     }
 
