@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="@dimen/list_item_height"
     android:orientation="horizontal"
     android:minHeight="@dimen/list_item_height"
     android:background="@color/tan_background">
@@ -27,7 +27,6 @@
             android:id="@+id/miwok_textView"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
@@ -38,7 +37,6 @@
             android:id="@+id/default_textView"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_weight="1"
             android:layout_below="@id/miwok_textView"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
@@ -51,6 +49,6 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="16dp"
-            android:src="@drawable/baseline_play_arrow_white_48" />
+            android:src="@drawable/baseline_play_arrow_white_24" />
     </RelativeLayout>
 </RelativeLayout>
